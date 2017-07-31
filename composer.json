@@ -1,0 +1,27 @@
+{
+    "name": "highsolutions/google-keywords",
+    "description": "A Laravel package for synchronizing with Google Search Console to get visitors' search keywords",
+    "keywords": ["laravel", "google", "keywords", "search", "console", "webmaster", "tools"],
+    "authors": [
+        {
+            "name": "HighSolutions",
+            "email": "adam@highsolutions.pl"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/support": "~5.1",
+        "google/apiclient": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "HighSolutions\\GoogleKeywords\\": "src/"
+        }
+    },
+    "extra": {
+        "component": "package",
+        "frameworks": ["Laravel 5.4"]
+    },
+    "minimum-stability": "stable"
+}
