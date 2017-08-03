@@ -46,7 +46,7 @@ class GoogleKeywordsServiceProvider extends ServiceProvider
     private function initCommand($name, $class)
     {
         $this->app->singleton("command.laravel-google-keywords.{$name}", function($app) use ($class) {
-            return new $class($app['laravel-google-keywords']);
+            return new $class($app);
         });
 
         $this->commands("command.laravel-google-keywords.{$name}");

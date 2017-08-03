@@ -1,8 +1,9 @@
-<?php 
+<?php
 
 namespace HighSolutions\GoogleKeywords\Console;
 
 use Illuminate\Console\Command;
+use HighSolutions\GoogleKeywords\Services\KeywordsFetcher;
 
 class FetchCommand extends Command 
 {
@@ -34,6 +35,9 @@ class FetchCommand extends Command
      */
     public function handle()
     {
+        $fetcher = new KeywordsFetcher(\Config::get('laravel-google-keywords'));
+        $fetcher->fetchAll();
+
         $this->info("Command executed.");
     }
 
