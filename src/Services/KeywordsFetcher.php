@@ -20,8 +20,25 @@ class KeywordsFetcher
 
 	public function fetchAll()
 	{
+		$this->checkConfig();
+
 		foreach($this->config['websites'] as $website)
 			$this->fetch($website);
+	}
+
+	protected function checkConfig()
+	{
+		if(!isset($this->config['websites']))
+			dd("Invalid 'Laravel Google Keywords' config! Key 'websites' is not defined.");
+
+		$keys = ['url', 'credentials'];
+		foreach($this->config['websites'] as $website) {
+			foreach($keys as $key) {
+				if(!isset($website[$key]) || empty($website['key'])) {
+					dd("Invalid 'Laravel Google Keywords' config! Key '{$key}' is not defined or is empty for one of websites.");
+				}
+			}
+		}
 	}
 
 	public function fetch($params)
