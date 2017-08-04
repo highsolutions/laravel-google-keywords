@@ -155,6 +155,9 @@ Usage
 Changelog
 ---------
 
+1.0.1
+- Fix error with checking config
+
 1.0.0
 - Create package
 - Model API
@@ -162,6 +165,7 @@ Changelog
 Roadmap
 -------
 
+* Gather info about subsites also
 * Examples of usage as controllers and views
 * Comments
 * Unit tests!
