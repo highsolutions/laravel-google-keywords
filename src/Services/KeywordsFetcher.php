@@ -33,7 +33,6 @@ class KeywordsFetcher
 
 		$keys = ['url', 'credentials'];
 		foreach($this->config['websites'] as $website) {
-		dd($website);
 			foreach($keys as $key) {
 				if(!isset($website[$key]) || empty($website[$key])) {
 					dd("Invalid 'Laravel Google Keywords' config! Key '{$key}' is not defined or is empty for one of websites.");
