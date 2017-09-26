@@ -18,7 +18,8 @@ Add the following line to the `require` section of your Laravel webapp's `compos
 
 Run `composer update` to install the package.
 
-Then, update `config/app.php` by adding an entry for the service provider:
+This package uses Laravel 5.5 Package Auto-Discovery.
+For previous versions of Laravel, you need to update `config/app.php` by adding an entry for the service provider:
 
 ```php
 'providers' => [
@@ -155,7 +156,10 @@ Usage
 Changelog
 ---------
 
-1.0.1
+1.0.3
+- Support Package Auto-Discovery
+
+1.0.2
 - Fix error with checking config
 
 1.0.0
@@ -173,4 +177,4 @@ Roadmap
 Credits
 -------
 
-This package is developed by [HighSolutions](http://highsolutions.pl), software house from Poland in love in Laravel.
+This package is developed by [HighSolutions](https://highsolutions.org), software house from Poland in love in Laravel.
