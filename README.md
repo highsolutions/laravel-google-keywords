@@ -156,6 +156,9 @@ Usage
 Changelog
 ---------
 
+1.1.0
+- Laravel 6.0 support
+
 1.0.3
 - Support Package Auto-Discovery
 
