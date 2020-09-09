@@ -156,6 +156,9 @@ Usage
 Changelog
 ---------
 
+1.2.0
+- Laravel 7.x and 8.x support
+
 1.1.0
 - Laravel 6.0 support
 
